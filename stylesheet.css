@@ -1,0 +1,139 @@
+h1 {
+    color: blue;
+    border: 10px dotted yellow;
+    font-family: 'Orbitron', sans-serif;
+}
+
+p {
+    color: green;
+    font-size: 38px;
+    text-align: center;
+}
+
+.light {
+    color: red;
+    text-align: left;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.heavy {
+    color: purple;
+    text-align: right;
+    border-top: 3px solid brown;
+}
+
+#tahoma {
+    font-family: 'Liu Jian Mao Cao', cursive;
+}
+
+#nets {
+    height: 400px; 
+    width: 450px;
+    
+}
+
+.container {
+    width: 20%;
+}
+
+.container p { 
+    text-align: right;
+    color: cyan;
+}
+
+.marginPadding {
+    display: inline-block;
+
+    /* Top, Right, Bottom, Left */
+    margin: 5px 15px 90px 25px; 
+    padding: 20px 50px 43px 32px;
+
+    /* Target specific sides 
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px
+    margin-left: 5px; */
+
+    /* Targeting multpile at ones
+    first numebr is top/bottom
+    second number is left/right
+    margin: 20px 60px; */
+}
+
+#box {
+    width: 100px;
+    height: 100px;
+    background-color: darkred;
+    position: relative;
+    left: 25px;
+}
+
+#box2 {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: relative;
+    left: 20px;
+    top: 50px;
+    z-index: 1;
+}
+
+#absolute{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#abs {
+    position: absolute;
+    top: 35px;
+    left: 20px;
+}
+
+#fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: darkgreen;
+}
+
+#sticky {
+    position: sticky;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: cyan;
+}
+
+@keyframes fadeMe{
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+   }
+   h2 {
+       background-color: blue;
+       color: red;
+       animation: fadeMe 4s color ease-in;
+       -webkit-animation: fadeMe 4s color ease-in;
+       -moz-animation: fadeMe 4s color ease-in;
+       -ms-animation: fadeMe 4s color ease-in;
+       -o-animation: fadeMe 4s color ease-in;
+       -webkit-transition: all 4s ease;
+       -moz-transition: all 4s ease;
+       -ms-transition: all 4s ease;
+       -o-transition: all 4s ease;
+       transition: all 4s ease;
+   }
+   h2:hover {
+       background-color: red;
+       color: blue;
+       -webkit-transition: all 4s ease;
+       -moz-transition: all 4s ease;
+       -ms-transition: all 4s ease;
+       -o-transition: all 4s ease;
+       transition: all 4s ease;
+   }
